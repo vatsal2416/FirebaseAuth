@@ -9,53 +9,57 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Gender" />
+        android:hint="@string/gender"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editTextMobileNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="MobileNo" />
+        android:hint="@string/mobileno"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editTextQualification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Qualification" />
+        android:hint="@string/qualification"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editTextAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Address" />
+        android:hint="@string/address"
+        android:inputType="text" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnRead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-
-            android:text="Read" />
+            android:text="@string/read" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnInsert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-
-            android:text="Insert" />
+            android:text="@string/insert" />
 
     </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lview"></ListView>
 
 </LinearLayout>

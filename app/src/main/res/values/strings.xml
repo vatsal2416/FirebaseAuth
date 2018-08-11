@@ -4,4 +4,10 @@
     <string name="email">Email</string>
     <string name="register">REGISTER</string>
     <string name="password">Password</string>
+    <string name="read">Read</string>
+    <string name="insert">Insert</string>
+    <string name="mobileno">MobileNo</string>
+    <string name="qualification">Qualification</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
 </resources>
