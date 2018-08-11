@@ -16,10 +16,11 @@ public class MainActivity extends Activity {
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final TextView textEmail = findViewById(R.id.et1);
-        final TextView textPassword= findViewById(R.id.et2);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final TextView textEmail = findViewById(R.id.et1);
+        final TextView textPassword= findViewById(R.id.et2);
 
         //Initialize buttons
         Button btn_Login = findViewById(R.id.login);
@@ -53,7 +54,7 @@ public class MainActivity extends Activity {
                             Toast.makeText(getApplicationContext(), "Authentication Successful", Toast.LENGTH_SHORT).show();
 
                         }else{
-                            Toast.makeText(getApplicationContext(), "Authentication Successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Authentication Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -67,7 +68,7 @@ public class MainActivity extends Activity {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "Authentication Successful", Toast.LENGTH_SHORT).show();
                         }else{
-                            Toast.makeText(getApplicationContext(), "Authentication Successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Authentication Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
