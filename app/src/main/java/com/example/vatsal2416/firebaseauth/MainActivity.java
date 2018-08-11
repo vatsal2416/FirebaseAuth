@@ -16,8 +16,8 @@ public class MainActivity extends Activity {
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final TextView textEmail = (TextView) findViewById(R.id.et1);
-        final TextView textPassword= (TextView)findViewById(R.id.et2);
+        final TextView textEmail = findViewById(R.id.et1);
+        final TextView textPassword= findViewById(R.id.et2);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
