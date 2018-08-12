@@ -17,6 +17,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ThrowOnExtraProperties;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -82,7 +83,6 @@ public class DatabaseActivity extends Activity {
                     vibrator.vibrate(200);
 
                 }else{
-
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                     DatabaseReference myRef = database.getReference("users");
                     DatabaseReference myRef_child = myRef.child(FirebaseAuth.getInstance().getUid());
@@ -90,6 +90,8 @@ public class DatabaseActivity extends Activity {
                     myRef_child.child("MobileNo").setValue(textMobileNo.getText().toString());
                     myRef_child.child("Qualification").setValue(textQualification.getText().toString());
                     myRef_child.child("Address").setValue(textAddress.getText().toString());
+
+                    Toast.makeText(DatabaseActivity.this,"Data Inserted", Toast.LENGTH_SHORT).show();
                 }
             }
         });
